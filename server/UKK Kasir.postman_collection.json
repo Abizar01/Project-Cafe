@@ -1,0 +1,933 @@
+{
+	"info": {
+		"_postman_id": "a8b3f00a-da3d-438f-80e0-9ab85a11dcd2",
+		"name": "UKK Kasir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15603907"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/getAllData",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"getAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nama_user\" : \"manajer123\",\n  \"username\" : \"manajer123\",\n  \"password\" : \"manajer123123\",\n  \"role\" : \"manajer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"manajer\",\n  \"password\": \"manajer123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/delete/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/getById/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"getById",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nama_user\" : \"manajer123\",\n  \"username\" : \"manajer123\",\n  \"password\" : \"manajer123123\",\n  \"role\" : \"manajer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/edit/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"edit",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/search/:name",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"search",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": "mana"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "meja",
+			"item": [
+				{
+					"name": "get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/meja/getAllData",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"getAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/meja/getById/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"getById",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomor_meja\" : \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/meja/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomor_meja\" : \"1\",\n    \"status\" : \"terisi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/meja/edit/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"edit",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/meja/delete/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/meja/search/:nomor_meja",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"meja",
+								"search",
+								":nomor_meja"
+							],
+							"variable": [
+								{
+									"key": "nomor_meja",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/getAllData",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"getAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/getById/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"getById",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_menu",
+									"value": "burger",
+									"type": "text"
+								},
+								{
+									"key": "jenis",
+									"value": "makanan",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "makanan dari nganjuk dengan rasa yang lezat",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "250000",
+									"type": "text"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/home/dhisa/Pictures/Screenshot from 2022-08-08 15-12-04.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/menu/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_menu",
+									"value": "burger",
+									"type": "text"
+								},
+								{
+									"key": "jenis",
+									"value": "makanan",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "makanan dari nganjuk dengan rasa yang lezat",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "25000",
+									"type": "text"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/home/dhisa/Pictures/Screenshot from 2022-08-08 15-12-04.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/menu/edit/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"edit",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/delete/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/search/:nama_menu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								"search",
+								":nama_menu"
+							],
+							"variable": [
+								{
+									"key": "nama_menu",
+									"value": "bur"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaksi",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_user\" : \"2\",\n    \"id_meja\" : \"2\",\n    \"nama_pelanggan\" : \"paimen\",\n    \"status\" : \"belum_bayar\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/transaksi/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_user\" : \"2\",\n    \"id_meja\" : \"2\",\n    \"nama_pelanggan\" : \"paimen\",\n    \"status\" : \"belum_bayar\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/transaksi/edit/:id_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"edit",
+								":id_transaksi"
+							],
+							"variable": [
+								{
+									"key": "id_transaksi",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/getAllData",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"getAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/getById/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"getById",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter by name user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/filter/nama_user/:nama_user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"filter",
+								"nama_user",
+								":nama_user"
+							],
+							"variable": [
+								{
+									"key": "nama_user",
+									"value": "manajer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter by tgl transaksi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/filter/tgl_transaksi/2023-02-09",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"filter",
+								"tgl_transaksi",
+								"2023-02-09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/delete/:id_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"delete",
+								":id_transaksi"
+							],
+							"variable": [
+								{
+									"key": "id_transaksi",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter by bulan transaksi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaksi/filter/bulan_transaksi/:bulan_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaksi",
+								"filter",
+								"bulan_transaksi",
+								":bulan_transaksi"
+							],
+							"variable": [
+								{
+									"key": "bulan_transaksi",
+									"value": "02"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "detail transaksi",
+			"item": [
+				{
+					"name": "get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/detail_transaksi/getAllData",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"detail_transaksi",
+								"getAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get data by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/detail_transaksi/getById/:id_detail_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"detail_transaksi",
+								"getById",
+								":id_detail_transaksi"
+							],
+							"variable": [
+								{
+									"key": "id_detail_transaksi",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_transaksi\" : \"1\",\n    \"id_menu\" : \"1\",\n    \"harga\" : \"20000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/detail_transaksi/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"detail_transaksi",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_transaksi\" : \"1\",\n    \"id_menu\" : \"1\",\n    \"harga\" : \"20000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/detail_transaksi/edit/:id_detail_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"detail_transaksi",
+								"edit",
+								":id_detail_transaksi"
+							],
+							"variable": [
+								{
+									"key": "id_detail_transaksi",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/detail_transaksi/delete/:id_detail_transaksi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"detail_transaksi",
+								"delete",
+								":id_detail_transaksi"
+							],
+							"variable": [
+								{
+									"key": "id_detail_transaksi",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjozLCJuYW1hX3VzZXIiOiJtYW5hamVyIiwicm9sZSI6Im1hbmFqZXIiLCJ1c2VybmFtZSI6Im1hbmFqZXIiLCJwYXNzd29yZCI6IiQyYiQxMCQwdE93RWtmWHFjdHh0SmVQOGxralBPZUlTVGNuek5kSE0zLk5OTWxDdTlkL2k3QTVwdE9mNiJ9.YtsPKCS31nRIAsBMyXuQ5pAVaqLn6Z6hBdUlENgkLec",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
